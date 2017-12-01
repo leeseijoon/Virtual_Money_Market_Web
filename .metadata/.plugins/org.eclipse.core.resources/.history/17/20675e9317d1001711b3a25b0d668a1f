@@ -1,0 +1,11 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Page</title>
+</head>
+<body>
+<h2>Hello this is a display.jsp Page</h2>
+My name is: 
+</body>
+</html>

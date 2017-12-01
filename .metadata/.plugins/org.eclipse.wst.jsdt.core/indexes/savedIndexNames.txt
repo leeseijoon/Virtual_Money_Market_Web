@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\LSJ\4_2\Database_project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3267028657.index
+4101008918.index
+3001538512.index
+891076116.index
+1278235008.index

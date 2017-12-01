@@ -1,0 +1,26 @@
+package com.database.db_project.user;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@RequestMapping(value="/user")
+public class UserController {
+	@Autowired
+	private UserService userService;
+	
+	@RequestMapping(value = "/GetUserlist", method = RequestMethod.POST)
+	@ResponseBody
+	public List<User> GetUserList (@ModelAttribute User entity) throws Exception{
+		//prjt_idx값과 list의 usr_id, usr_cmpny 값을 사용하여 insert
+		List<User> list = userService.findAll(entity);
+		
+		return list;
+	}
+}

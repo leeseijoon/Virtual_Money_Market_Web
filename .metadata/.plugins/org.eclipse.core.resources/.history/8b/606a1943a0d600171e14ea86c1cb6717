@@ -1,0 +1,21 @@
+package com.database.db_project.user;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class UserController {
+	@Autowired
+	private UserRepository userRepository;
+	
+	@RequestMapping("/userlist")
+	public String view(Model model) {
+		List<User> userList = userRepository.findAll();
+		model.addAttribute("UserList", userList);
+		return "userlist/user-list";
+	}
+}

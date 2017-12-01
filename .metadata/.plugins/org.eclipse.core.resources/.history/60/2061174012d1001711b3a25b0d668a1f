@@ -1,0 +1,5 @@
+package com.database.db_project.home;
+
+public class HomeController {
+
+}

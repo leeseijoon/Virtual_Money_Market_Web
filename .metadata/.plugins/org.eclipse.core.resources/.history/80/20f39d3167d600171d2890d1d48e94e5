@@ -1,0 +1,5 @@
+package com.database.db_project.user;
+
+public class UserController {
+
+}

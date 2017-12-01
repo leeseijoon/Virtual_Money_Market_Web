@@ -1,0 +1,6 @@
+package com.database.db_project.user;
+
+public interface userRepository extends JapRepository<User, Long> {
+	
+
+}

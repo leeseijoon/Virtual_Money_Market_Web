@@ -1,0 +1,12 @@
+package com.database.db_project.user;
+
+@Service
+public class UserService {
+	public List<CmpnyInfo> findAll(CmpnyInfo entity) {
+		return cmpnyInfoRepository.findAll(entity);
+	}
+	
+	public CmpnyInfo findOne(CmpnyInfo entity) {
+		return cmpnyInfoRepository.findOne(entity);
+	}
+}
